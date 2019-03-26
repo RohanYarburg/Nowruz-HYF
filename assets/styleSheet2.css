@@ -1,0 +1,171 @@
+
+body {
+    background: linear-gradient(253deg, #ff0077, #fffb00, #03ffab);
+    background-size: 300% 300%;
+    -webkit-animation: Background 10s ease infinite;
+    -moz-animation: Background 10s ease infinite;
+    animation: Background 10s ease infinite;
+    text-align: center;
+  }
+  
+  @-webkit-keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @-moz-keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+.main{
+  position: absolute;
+  right: 0%;
+  left: -55%;
+  bottom: 0%;
+  top: 10%;
+}
+
+#disk{
+    height: 200px; width: 200px;
+    border-radius: 100px;
+    animation: rotating 5s linear 3s infinite forwards;
+
+}
+
+#songTitle{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  font-size: 35px;
+  position: relative;
+  top: 5%;
+  bottom: 0%;
+}
+
+#audio{
+  position: fixed;
+  bottom: 0%;
+  top: 70%;
+  right: 0%;
+  left: 10%;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.container{
+    box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	border-radius: 5px;
+	margin: 3em auto;
+	background: rgba(255, 255, 255, 0.95);
+	height: 550px;
+	width: 600px;
+	padding: 1em;
+
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 40%;
+    top: 0;	
+    z-index: 1;
+}
+
+h1{
+    background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Playfair Display', serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	letter-spacing: 2px;
+	font-size: 3.5em;
+    margin: 0;
+    z-index: 2;
+  }
+
+  p{
+      font-size: 22px;
+      color: #1797d2;
+  }
+
+  /* smoke */
+
+#smoke {
+	position: absolute;
+	z-index: 3;
+	width: 1px; height: 160px;
+	left: 98%; bottom: -2%;
+}
+
+/* smoke balls */
+
+#smoke span { 
+  display: block;
+	position: absolute;
+	bottom: -35px; left: 50%; margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 55px solid rgb(214, 247, 68);
+	border-radius: 55px;
+  left: -14px;
+  opacity: 0;
+  transform: scale(0.2);
+  z-index: 1;
+}
+
+/* Smoke animation */
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 0.9; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(2) translate(-150px, -350px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 0.9; transform: scale(0.2) translate(0px, -5px) }
+	100% { opacity: 0; transform: scale(2) translate(-450px, -200px) }
+}
+
+#smoke .s0 { animation: smokeL 10s -2s infinite }
+#smoke .s1 { animation: smokeR 10s -1s infinite }
+#smoke .s2 { animation: smokeL 10s 0s infinite }
+#smoke .s3 { animation: smokeR 10s 1s infinite }
+#smoke .s4 { animation: smokeL 10s 2s infinite }
+#smoke .s5 { animation: smokeR 10s 3s infinite }
+#smoke .s6 { animation: smokeL 10s 4s infinite }
+#smoke .s7 { animation: smokeR 10s 5s infinite }
+#smoke .s8 { animation: smokeL 10s 6s infinite }
+#smoke .s9 { animation: smokeR 10s 7s infinite }
