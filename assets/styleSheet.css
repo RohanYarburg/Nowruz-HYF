@@ -1,5 +1,5 @@
 #nowruz{
-    background-image: url(./dancing.JPG);
+    background-image: url(./assets/dancing.JPG);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-animation-name: masked-animation;
