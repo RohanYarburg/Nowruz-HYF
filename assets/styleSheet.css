@@ -1,5 +1,5 @@
 #nowruz{
-    background-image: url(assets/dancing.JPG);
+    background-image: url(dancing.JPG);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-animation-name: masked-animation;
@@ -17,7 +17,7 @@
 }
     
 #HYF {
-    background-image: url(http://www.vigorous-tech.com/d/pic/2-juice-powder/barley-grass.jpg);
+    background-image: url(barley-grass.jpg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-animation-name: masked-animation;
