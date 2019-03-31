@@ -65,6 +65,7 @@ body {
     z-index: 2;
     background-color: transparent;
     left: 43%; bottom: 28%;
+    height:68px;
 }
 
 #button:hover{
